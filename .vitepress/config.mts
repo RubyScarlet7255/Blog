@@ -8,7 +8,7 @@
 
 import { mergeConfig, type UserConfig } from "vitepress";
 import {defaultConfig , defineConfig } from "../src/config/index";
-const userConfig: UserConfig = {
+const userConfig: UserConfig<AsyncThemeConfig> = {
     themeConfig: {
         author: "Ruby",
         user: {
@@ -32,7 +32,16 @@ const userConfig: UserConfig = {
             enable: false,
             prefix: "footer.tips",
             startTime: "04/02/2025 16:00:00"
-          }
+          },
+          sidebar: {
+            typedTextPrefix: "",
+            typedText: ["庄生晓梦迷蝴蝶，望帝春心托杜鹃"],
+            social: [{
+              name: "Github",
+              url: "https://github.com/RubyScarlet7255",
+              icon: "<img src=\"/pics/social/github.png\" height=\"30px\"/ width=\"30px\"></svg>",
+            }],
+          },
     }
 }
 mergeConfig(userConfig, defaultConfig);

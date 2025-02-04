@@ -3,7 +3,7 @@ title: 本站介绍
 date: 2025-02-04 17:00:00
 categories: 随笔
 cover: [/pics/first_post/cover.jpg]
-sticky: 1
+sticky: 3
 ---
 
 ![封面测试图](/pics/first_post/cover.jpg)

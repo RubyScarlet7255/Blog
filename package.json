@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "hexo-generator-tag": "^2.0.0",
     "vitepress": "^1.6.3",
     "vitepress-theme-async": "^0.0.23"
   },
