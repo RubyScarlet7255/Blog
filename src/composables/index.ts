@@ -4,7 +4,7 @@ import { useMediaQuery } from '@vueuse/core';
 import { data as allPosts } from './posts.data';
 import { groupBy, sortBy, formatDate, joinPath } from '../utils/shared';
 
-import bannerImg from '../assets/banner.png';
+import bannerImg from '../assets/banner.jpg';
 import { getMitt } from './mitt';
 
 // import failureImg from '../assets/img/failure.ico'
