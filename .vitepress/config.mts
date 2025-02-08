@@ -8,7 +8,7 @@
 
 import { mergeConfig, type UserConfig } from "vitepress";
 import {defaultConfig , defineConfig } from "../src/config/index";
-const userConfig: UserConfig<AsyncThemeConfig> = {
+const userConfig: UserConfig = {
     themeConfig: {
         author: "Ruby",
         user: {
@@ -39,10 +39,11 @@ const userConfig: UserConfig<AsyncThemeConfig> = {
             social: [{
               name: "Github",
               url: "https://github.com/RubyScarlet7255",
-              icon: "<img src=\"/pics/social/github.png\" height=\"30px\"/ width=\"30px\"></svg>",
+              icon: "<img src=\"./pics/social/github.png\" height=\"30px\"/ width=\"30px\"></svg>",
             }],
           },
-    }
+    },
+    base: "/repo/",
 }
 mergeConfig(userConfig, defaultConfig);
 export default defineConfig(userConfig);
